@@ -1,4 +1,4 @@
-; Scheme Parser Program - CS 3304
+; Scheme Parser Program
 ; Nayef Copty
 
 ;; find the number of statements in an s-expression.
