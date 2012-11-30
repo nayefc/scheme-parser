@@ -51,7 +51,7 @@ should be passed in as:
 
 The invocation of the above program will be:
     
-    (parser '((if bool then (while bool (id = id + const)(if bool then (id = const / const))))(id = const * id)))
+    (parse '((if bool then (while bool (id = id + const)(if bool then (id = const / const))))(id = const * id)))
 
 ###To run:
     $ mzscheme < parser.scm

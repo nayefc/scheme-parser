@@ -1,13 +1,14 @@
 ; Scheme Parser Program
 ; Nayef Copty
 
-;; find the number of statements in an s-expression.
+; find the number of statements in an s-expression.
 (define (statements exp)
   (cond
    ((null? exp) 0)
    ((list? (car exp)) (+ 1 (statements (car exp)) (statements (cdr exp))))
    (#t (statements (cdr exp)))))
 
+; returns the maximum number between from two arguments
 (define (find_max a b)
   (cond
    ((> a b) a)
